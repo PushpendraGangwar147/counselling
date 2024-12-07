@@ -200,9 +200,9 @@ def counselling_info (op2,rank,category,gender):
      if op2=='JoSAA':
           data_csv='josaa2.csv'
      elif op2=='UPTAC':
-          data_csv='csab.csv'
-     elif op2=='CSAB':
           data_csv='uptac.csv'
+     elif op2=='CSAB':
+          data_csv='csab.csv'
           # uptac(data_csv)
      data = load_data(data_csv)
      # user_rank=int(input('Enter your Rank : '))
