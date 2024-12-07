@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Institutes</title>
+</head>
+<body>
+    <h1>List of Institutes</h1>
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>Branch</th>
+            <th>Closing Rank</th>
+            <th>Gender</th>
+            <th>Category</th>
+            <th>Quota</th>
+            <th>Chances</th>
+        </tr>
+        {% for item in data %}
+        <tr>
+            <td>{{ item.Institue}}</td>
+            <td>{{ item.Branch}}</td>
+            <td>{{ item.Closing}}</td>
+            <td>{{ item.Gender}}</td>
+            <td>{{ item.Category}}</td>
+            <td>{{ item.Quota}}</td>
+            <td>{{ item.Chances}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
